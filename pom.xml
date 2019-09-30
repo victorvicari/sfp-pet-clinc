@@ -24,8 +24,7 @@
 		<start-class>de.qmsq.sfgpetclinic.SfgPetClinicApplication</start-class>
 	</properties>
 
-	<dependencies>
-	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -33,7 +32,21 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+					<autoVersionSubmodules>true</autoVersionSubmodules>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+
+	<scm>
+		<developerConnection>
+			scm:git:https://github.com/qmsquirrel/sfp-pet-clinc.git
+		</developerConnection>
+	</scm>
 
 </project>
