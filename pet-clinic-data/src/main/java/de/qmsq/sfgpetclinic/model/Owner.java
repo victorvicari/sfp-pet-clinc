@@ -9,7 +9,7 @@ import java.util.Set;
 @Entity
 @Table(name = "owners")
 @Data
-public class Owner extends Person  {
+public class Owner extends Person {
 
     @Column(name = "address")
     private String address;
